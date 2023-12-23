@@ -1,0 +1,30 @@
+{%extends "base.html"%}
+{%block title%} 
+You're Definitely An Idiot
+{%endblock%}
+
+{%block content%}
+
+<div class="container text-center text-info px-3 py-5">
+ 
+ {% if session["amt"] == 5000 %}
+ <h3>CONGRATULATIONS Dear {{session["name"]}},  youre an <strong>IDIOT</strong>,do you think your government will ever give you {{session["amt"]}} just like that ?, please have sense before its too late</h3>
+
+{% elif session["amt"] == 10000 %}
+ <h3>
+  CONGRATS Dear {{session["name"]}} , we would like you to know that youre a very big <strong>IDIOT</strong> do you think your government will ever give you {{session["amt"]}} just like that ?, please have sense before its too late, im begging you, <strong>have sense</strong>
+ </h3>
+
+{% elif session["amt"] == 20000 %}
+ <h3>
+  CONGRATULATIONS {{session["name"]}} youre are one of the biggest <strong>IDIOTS</strong>  we have in this country, keep waiting for the government to give you {{session["amt"]}} Naira
+ </h3>
+ 
+ {%endif%}
+ 
+ 
+</div>
+ <script>
+ alert("You will receive a credit alert in due time")
+ </script>
+{%endblock%}

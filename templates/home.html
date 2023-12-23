@@ -1,0 +1,57 @@
+{%extends "base.html"%}
+{%block title%} Federal Government Giveaway Program {%endblock%}
+
+{%block content%}
+
+<div class="container-fluid py-5" style="background-image: linear-gradient(
+  45deg,
+  hsl(190deg 69% 52%) 0%,
+  hsl(187deg 74% 47%) 14%,
+  hsl(185deg 84% 43%) 37%,
+  hsl(182deg 93% 40%) 52%,
+  hsl(180deg 89% 39%) 62%,
+  hsl(177deg 78% 41%) 71%,
+  hsl(184deg 100% 37%) 78%,
+  hsl(191deg 100% 40%) 84%,
+  hsl(196deg 100% 42%) 90%,
+  hsl(201deg 100% 43%) 95%,
+  hsl(208deg 77% 48%) 100%); font-family:Abel;">
+  
+  <h1 class="py-5 my-5 text-white">
+   Welcome to the Federal Government Cash Giveaway Program
+  </h1>
+</div>
+
+<div class="container-fluid">
+ 
+ <div class="card-columns">
+  
+ <div class="card py-5 shadow-lg my-3 px-3 mx-1 border-0 rounded-9 border-radius text-center" >
+  <h3 class="my-3 text-center text-info">Click Here To get <span>&#8358;5000</span></h3>
+  <p class="card-body"></p>
+  </p>
+  <a href="{{url_for("show_form", amt= 5000)}}" <button class="btn btn-outline-info text-center  btn-lg">Get It Now</button></a>
+  </p>
+ </div>
+ 
+ <div class="card py-5 shadow-lg rounded-top my-3 px-3 mx-1 border-0 text-center" >
+  <h3 class="my-3 text-center text-info">Click Here To get <span>&#8358;10000</span></h3>
+  <p class="card-body"></p>
+  </p>
+<a href="{{url_for("show_form", amt= 10000)}}" <button class="btn btn-outline-info text-center  btn-lg">Get It Now</button></a>
+  </p>
+ </div>
+ 
+ <div class="card py-5 shadow-lg rounded-top my-3 px-3 mx-1 border-0 text-center" >
+  <h3 class="my-3 text-center text-info">Click Here To get <span>&#8358;20000</span></h3>
+  <p class="card-body"></p>
+  </p>
+  <a href="{{url_for("show_form", amt= 20000)}}" <button class="btn btn-outline-info text-center  btn-lg">Get It Now</button></a>
+  </p>
+ </div> 
+ 
+</div>
+
+</div>
+</div>
+{%endblock%}
