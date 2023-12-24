@@ -26,6 +26,6 @@ def ready():
         return render_template("result.html")
         
     else:
-        pass
+        return redirect (url_for("home"))
     
     
